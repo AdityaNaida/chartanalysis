@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chartanalysis</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="discount-container">
+        <div class="discount-effect"></div>
+        <p class="discount-text">
+          <b>Early Summer Sale</b> Save upto <b>70% off</b> on your trip
+        </p>
+      </div>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <a href="index.html" class="logo">
+            <img
+              src="assets/images/logo.webp"
+              alt="logo image"
+              height="50"
+              width="150"
+              decoding="async"
+              loading="eager"
+            />
+          </a>
+          <div class="nested-nav">
+            <div class="social-medias">
+              <a href="https://www.facebook.com/chartanalysisofficial/">
+                <img
+                  src="assets/icons/facebook-icon.svg"
+                  alt="facebook icon"
+                  height="20"
+                  width="20"
+                  decoding="async"
+                  loading="eager"
+                />
+              </a>
+              <a href="https://www.instagram.com/chartanalysisofficial/">
+                <img
+                  src="assets/icons/instagram-icon.svg"
+                  alt="instagram-icon"
+                  height="20"
+                  width="20"
+                  decoding="async"
+                  loading="eager"
+                />
+              </a>
+
+              <a href="https://www.youtube.com/@chartanalysis123">
+                <img
+                  src="assets/icons/youtube-icon.svg"
+                  alt="instagram-icon"
+                  height="20"
+                  width="20"
+                  decoding="async"
+                  loading="eager"
+                />
+              </a>
+
+              <a href="https://www.linkedin.com/company/chart-analysis/">
+                <img
+                  src="assets/icons/linkedin-icon.svg"
+                  alt="instagram-icon"
+                  height="20"
+                  width="20"
+                  decoding="async"
+                  loading="eager"
+                />
+              </a>
+            </div>
+
+            <a href="#" class="contact-btn">Contact</a>
+          </div>
+        </div>
+      </nav>
+      <div class="navbar">
+        <div class="dynamiclinks-container">
+          <div class="dynamiclinks-slider">
+            <a href="#" class="dynamiclink">
+              <img
+                src="assets/icons/research.svg"
+                alt="research icon"
+                height="25"
+                width="25"
+                decoding="async"
+                loading="eager"
+              />
+              <span>Research</span>
+            </a>
+            <a href="#" class="dynamiclink">
+              <img
+                src="assets/icons/policy.svg"
+                alt="policy icon"
+                height="25"
+                width="25"
+                decoding="async"
+                loading="eager"
+              />
+              <span>Policies</span>
+            </a>
+            <a href="#" class="dynamiclink">
+              <img
+                src="assets/icons/plans.svg"
+                alt="plans icon"
+                height="25"
+                width="25"
+                decoding="async"
+                loading="eager"
+              />
+              <span>Plans</span>
+            </a>
+            <a href="#" class="dynamiclink">
+              <img
+                src="assets/icons/about.svg "
+                alt="about icon"
+                height="25"
+                width="25"
+                decoding="async"
+                loading="eager"
+              />
+              <span>About</span>
+            </a>
+          </div>
+          <div class="toggle-btn">
+            <div class="plans-btn bg-orange" onclick="activePlans()">Plans</div>
+            <div class="querries-btn" onclick="activeQuerry()">Querries</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero-container">
+        <div class="course-div">
+          <div class="img-holder">
+            <img
+              src="assets/images/ch1.jpg"
+              alt="image 1"
+              height="50"
+              width="50"
+              decoding="async"
+              loading="eager"
+            />
+            <span class="offers-text"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+              >
+                <path
+                  d="M10.705 5.79L6.205 1.29C6.025 1.11 5.775 1 5.5 1H2C1.45 1 1 1.45 1 2V5.5C1 5.775 1.11 6.025 1.295 6.21L5.795 10.71C5.975 10.89 6.225 11 6.5 11C6.775 11 7.025 10.89 7.205 10.705L10.705 7.205C10.89 7.025 11 6.775 11 6.5C11 6.225 10.885 5.97 10.705 5.79ZM6.5 10.005L2 5.5V2H5.5V1.995L10 6.495L6.5 10.005Z"
+                  fill="#fff"
+                ></path>
+                <path
+                  d="M3.25 4C3.66421 4 4 3.66421 4 3.25C4 2.83579 3.66421 2.5 3.25 2.5C2.83579 2.5 2.5 2.83579 2.5 3.25C2.5 3.66421 2.83579 4 3.25 4Z"
+                  fill="#fff"
+                ></path>
+              </svg>
+              Saved INR 5000
+            </span>
+          </div>
+          <div class="course-details">
+            <div class="course-heading">
+              <p class="grey-text">Research report & calls</p>
+              <p>
+                <span class="ratings"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M15.4829 5.63406L10.6864 4.90408L8.54222 0.352135C8.48365 0.227506 8.38731 0.126615 8.26829 0.0652895C7.96981 -0.0890138 7.6071 0.0395723 7.45786 0.352135L5.3137 4.90408L0.517213 5.63406C0.384974 5.65384 0.26407 5.71912 0.171503 5.81803C0.0595945 5.93848 -0.0020722 6.10053 5.31712e-05 6.26856C0.00217854 6.4366 0.0679221 6.59688 0.182838 6.71418L3.65316 10.2572L2.83328 15.2602C2.81405 15.3766 2.82635 15.4963 2.86878 15.6057C2.91121 15.7151 2.98207 15.8099 3.07333 15.8793C3.16459 15.9488 3.27259 15.99 3.38509 15.9984C3.4976 16.0068 3.6101 15.982 3.70983 15.9269L8.00004 13.5648L12.2902 15.9269C12.4074 15.9922 12.5434 16.0139 12.6737 15.9902C13.0024 15.9308 13.2235 15.6044 13.1668 15.2602L12.3469 10.2572L15.8172 6.71418C15.9117 6.61724 15.974 6.49064 15.9929 6.35216C16.0439 6.00597 15.8135 5.68549 15.4829 5.63406Z"
+                      fill="#19AD6F"
+                    ></path>
+                  </svg>
+                  4.9
+                </span>
+                <span class="reviews">(326)</span>
+              </p>
+            </div>
+            <h2 class="course-name">Silver</h2>
+            <span class="sale-text">early summer sale</span>
+            <div class="price-details">
+              <h2 class="price">INR 8000</h2>
+              <p class="before-price">INR 13000</p>
+              <p class="saved-price">SAVED INR 5000</p>
+            </div>
+            <a href="#" class="book-btn">Book Now</a>
+          </div>
+        </div>
+        <div class="course-div">
+          <div class="img-holder">
+            <img
+              src="assets/images/ch2.jpg"
+              alt="image 2"
+              height="50"
+              width="50"
+              decoding="async"
+              loading="eager"
+            />
+            <span class="offers-text"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+              >
+                <path
+                  d="M10.705 5.79L6.205 1.29C6.025 1.11 5.775 1 5.5 1H2C1.45 1 1 1.45 1 2V5.5C1 5.775 1.11 6.025 1.295 6.21L5.795 10.71C5.975 10.89 6.225 11 6.5 11C6.775 11 7.025 10.89 7.205 10.705L10.705 7.205C10.89 7.025 11 6.775 11 6.5C11 6.225 10.885 5.97 10.705 5.79ZM6.5 10.005L2 5.5V2H5.5V1.995L10 6.495L6.5 10.005Z"
+                  fill="#fff"
+                ></path>
+                <path
+                  d="M3.25 4C3.66421 4 4 3.66421 4 3.25C4 2.83579 3.66421 2.5 3.25 2.5C2.83579 2.5 2.5 2.83579 2.5 3.25C2.5 3.66421 2.83579 4 3.25 4Z"
+                  fill="#fff"
+                ></path>
+              </svg>
+              Saved INR 5000
+            </span>
+          </div>
+          <div class="course-details">
+            <div class="course-heading">
+              <p class="grey-text">Research report & calls</p>
+              <p>
+                <span class="ratings"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M15.4829 5.63406L10.6864 4.90408L8.54222 0.352135C8.48365 0.227506 8.38731 0.126615 8.26829 0.0652895C7.96981 -0.0890138 7.6071 0.0395723 7.45786 0.352135L5.3137 4.90408L0.517213 5.63406C0.384974 5.65384 0.26407 5.71912 0.171503 5.81803C0.0595945 5.93848 -0.0020722 6.10053 5.31712e-05 6.26856C0.00217854 6.4366 0.0679221 6.59688 0.182838 6.71418L3.65316 10.2572L2.83328 15.2602C2.81405 15.3766 2.82635 15.4963 2.86878 15.6057C2.91121 15.7151 2.98207 15.8099 3.07333 15.8793C3.16459 15.9488 3.27259 15.99 3.38509 15.9984C3.4976 16.0068 3.6101 15.982 3.70983 15.9269L8.00004 13.5648L12.2902 15.9269C12.4074 15.9922 12.5434 16.0139 12.6737 15.9902C13.0024 15.9308 13.2235 15.6044 13.1668 15.2602L12.3469 10.2572L15.8172 6.71418C15.9117 6.61724 15.974 6.49064 15.9929 6.35216C16.0439 6.00597 15.8135 5.68549 15.4829 5.63406Z"
+                      fill="#19AD6F"
+                    ></path>
+                  </svg>
+                  4.8
+                </span>
+                <span class="reviews">(290)</span>
+              </p>
+            </div>
+            <h2 class="course-name">Gold</h2>
+            <span class="sale-text">early summer sale</span>
+            <div class="price-details">
+              <h2 class="price">INR 10000</h2>
+              <p class="before-price">INR 15000</p>
+              <p class="saved-price">SAVED INR 5000</p>
+            </div>
+            <a href="#" class="book-btn">Book Now</a>
+          </div>
+        </div>
+        <div class="course-div">
+          <div class="img-holder">
+            <img
+              src="assets/images/ch3.jpg"
+              alt="image 3"
+              height="50"
+              width="50"
+              decoding="async"
+              loading="eager"
+            />
+            <span class="offers-text"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+              >
+                <path
+                  d="M10.705 5.79L6.205 1.29C6.025 1.11 5.775 1 5.5 1H2C1.45 1 1 1.45 1 2V5.5C1 5.775 1.11 6.025 1.295 6.21L5.795 10.71C5.975 10.89 6.225 11 6.5 11C6.775 11 7.025 10.89 7.205 10.705L10.705 7.205C10.89 7.025 11 6.775 11 6.5C11 6.225 10.885 5.97 10.705 5.79ZM6.5 10.005L2 5.5V2H5.5V1.995L10 6.495L6.5 10.005Z"
+                  fill="#fff"
+                ></path>
+                <path
+                  d="M3.25 4C3.66421 4 4 3.66421 4 3.25C4 2.83579 3.66421 2.5 3.25 2.5C2.83579 2.5 2.5 2.83579 2.5 3.25C2.5 3.66421 2.83579 4 3.25 4Z"
+                  fill="#fff"
+                ></path>
+              </svg>
+              Saved INR 5000
+            </span>
+          </div>
+          <div class="course-details">
+            <div class="course-heading">
+              <p class="grey-text">Research report & calls</p>
+              <p>
+                <span class="ratings"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M15.4829 5.63406L10.6864 4.90408L8.54222 0.352135C8.48365 0.227506 8.38731 0.126615 8.26829 0.0652895C7.96981 -0.0890138 7.6071 0.0395723 7.45786 0.352135L5.3137 4.90408L0.517213 5.63406C0.384974 5.65384 0.26407 5.71912 0.171503 5.81803C0.0595945 5.93848 -0.0020722 6.10053 5.31712e-05 6.26856C0.00217854 6.4366 0.0679221 6.59688 0.182838 6.71418L3.65316 10.2572L2.83328 15.2602C2.81405 15.3766 2.82635 15.4963 2.86878 15.6057C2.91121 15.7151 2.98207 15.8099 3.07333 15.8793C3.16459 15.9488 3.27259 15.99 3.38509 15.9984C3.4976 16.0068 3.6101 15.982 3.70983 15.9269L8.00004 13.5648L12.2902 15.9269C12.4074 15.9922 12.5434 16.0139 12.6737 15.9902C13.0024 15.9308 13.2235 15.6044 13.1668 15.2602L12.3469 10.2572L15.8172 6.71418C15.9117 6.61724 15.974 6.49064 15.9929 6.35216C16.0439 6.00597 15.8135 5.68549 15.4829 5.63406Z"
+                      fill="#19AD6F"
+                    ></path>
+                  </svg>
+                  4.5
+                </span>
+                <span class="reviews">(32)</span>
+              </p>
+            </div>
+            <h2 class="course-name">Diamond</h2>
+            <span class="sale-text">early summer sale</span>
+            <div class="price-details">
+              <h2 class="price">INR 15000</h2>
+              <p class="before-price">INR 20000</p>
+              <p class="saved-price">SAVED INR 5000</p>
+            </div>
+            <a href="#" class="book-btn">Book Now</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script defer src="assets/js/script.js"></script>
+  </body>
+</html>
