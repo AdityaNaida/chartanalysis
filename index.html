@@ -13,6 +13,7 @@
         <p class="discount-text">
           <b>Early Summer Sale</b> Save upto <b>70% off</b> on your trip
         </p>
+        <p class="count-down"></p>
       </div>
       <nav class="navbar">
         <div class="navbar-container">
@@ -26,7 +27,25 @@
               loading="eager"
             />
           </a>
+          <button class="menu-btn" onclick="fadeInMenu()">
+            <img
+              src="assets/icons/menu.svg"
+              alt="menu icon"
+              height="30"
+              width="30"
+              decoding="async"
+              loading="eager"
+            />
+          </button>
           <div class="nested-nav">
+            <button class="close-btn" onclick="fadeOutMenu()">
+              <img
+                src="assets/icons/close-icon.svg"
+                alt="close icon"
+                height="35"
+                width="35"
+              />
+            </button>
             <div class="social-medias">
               <a href="https://www.facebook.com/chartanalysisofficial/">
                 <img
