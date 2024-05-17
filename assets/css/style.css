@@ -171,6 +171,9 @@ img {
 .social-medias > a > img:hover {
   transform: translateY(-40%);
 }
+.social-medias > a > span {
+  display: none;
+}
 .contact-btn {
   color: var(--white);
   background: linear-gradient(93deg, var(--orange), var(--pink));
@@ -178,6 +181,10 @@ img {
   padding: 1rem 1.5rem;
   border-radius: var(--radius);
   border: none;
+}
+
+.contact-btn:active {
+  transform: scale(0.96);
 }
 
 .dynamiclinks-container {
@@ -806,6 +813,10 @@ footer {
 .hide {
   display: none !important;
 }
+
+.follow-txt {
+  display: none;
+}
 @media only screen and (max-width: 1200px) {
   .contact-dialogue {
     width: 45vw;
@@ -961,5 +972,19 @@ footer {
 
   .form {
     width: 90%;
+  }
+  .social-medias > a > img {
+    display: none;
+  }
+  .social-medias > a > span,
+  .follow-txt {
+    display: block;
+    color: var(--light-black);
+  }
+  .social-medias > a > span {
+    font: 500 2rem var(--light);
+  }
+  .follow-txt {
+    font: 500 3rem var(--medium);
   }
 }
