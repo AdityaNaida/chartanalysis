@@ -91,7 +91,9 @@
               </a>
             </div>
 
-            <a href="#" class="contact-btn">Contact</a>
+            <button class="contact-btn" onclick="viewContactModal()">
+              Get in touch
+            </button>
           </div>
         </div>
       </nav>
@@ -339,7 +341,274 @@
           </div>
         </div>
       </section>
+      <section class="contact-wrapper">
+        <div class="absolute inset-0 justify-center">
+          <div class="shape1 bg-primary opacity-50 bg-blur"></div>
+          <div class="shape2 bg-pink opacity-50 bg-blur"></div>
+        </div>
+        <div class="contact">
+          <p>Querries</p>
+          <h2>Are You ready to Start your Journey towards Wealth Creation!</h2>
+          <span
+            >You can reach us by anytime via <b>hello@chartanalysis.co.in</b>
+          </span>
+          <form action="" method="post" class="form">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              required=""
+              id="name"
+              name="name"
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              placeholder="you@comapny.com"
+              required=""
+              id="email"
+              name="email"
+            />
+            <label for="number">Phone Number</label>
+            <input
+              type="number"
+              placeholder="9876543210"
+              required=""
+              id="number"
+              name="phone_no"
+            />
+
+            <button type="submit" name="add">Submit</button>
+          </form>
+        </div>
+      </section>
+      <section class="seo-content">
+        <h2 class="seo-h2">
+          Welcome to Chartanalysis - Your Trusted Source for Stock Analysis
+        </h2>
+        <p class="seo-para">
+          Welcome to the official website of Chartanalysis, your go-to
+          destination for insightful and comprehensive stock analysis. Our
+          YouTube channel is dedicated to helping investors of all levels make
+          informed decisions with our in-depth market analysis, expert opinions,
+          and up-to-date financial news. Join our community of savvy investors
+          and stay ahead in the stock market game.
+        </p>
+
+        <h3 class="seo-h3">Why Subscribe to Chartanalysis?</h3>
+        <ul class="seo-ul">
+          <li>
+            <b>Expert Analysis:</b> Our team of experienced analysts breaks down
+            complex market trends and provides actionable insights.
+          </li>
+          <li>
+            <b>Educational Content: </b> Learn the fundamentals of investing,
+            advanced trading strategies, and everything in between.
+          </li>
+          <li>
+            <b>Regular Updates</b> Stay informed with our timely market updates,
+            stock picks, and financial news.
+          </li>
+          <li>
+            <b>Interactive Community:</b> Engage with fellow investors, ask
+            questions, and share your investment journey.
+          </li>
+        </ul>
+        <h3 class="seo-h3">About Chartanalysis</h3>
+        <p class="seo-para">
+          At Chartanalysis, we are passionate about empowering investors with
+          the knowledge and tools they need to succeed in the stock market. Our
+          YouTube channel,
+          <a href="https://www.youtube.com/@chartanalysis123">Chartanalysis</a>,
+          offers a wide range of content, from beginner tutorials to advanced
+          trading techniques. We believe that informed investors are successful
+          investors, and our mission is to provide you with the highest quality
+          stock analysis.
+        </p>
+        <h3 class="seo-h3">Our Video Categories</h3>
+        <p class="seo-para">
+          Explore our wide range of video content tailored to meet your
+          investment needs:
+        </p>
+        <ul class="seo-ul">
+          <li>
+            <b>Market Analysis:</b> In-depth analysis of the latest market
+            trends, economic indicators, and stock movements.
+          </li>
+          <li>
+            <b>Stock Picks:</b> Our top stock recommendations based on thorough
+            research and analysis.
+          </li>
+          <li>
+            <b>Educational Series:</b>Learn the basics of investing, trading
+            strategies, and financial literacy.
+          </li>
+          <li>
+            <b>Live Streams:</b>Join our live discussions and Q&A sessions to
+            get real-time insights and answers to your questions.
+          </li>
+        </ul>
+      </section>
     </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <div class="ruler"></div>
+          <div class="logo">
+            <img
+              src="assets/images/logo.webp"
+              alt="logo image"
+              height="50"
+              width="50"
+            />
+          </div>
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/chartanalysisofficial/">
+            <img
+              src="assets/icons/facebook-icon.svg"
+              alt="facebook icon"
+              height="25"
+              width="25"
+              decoding="async"
+              loading="eager"
+            />
+          </a>
+          <a href="https://www.instagram.com/chartanalysisofficial/">
+            <img
+              src="assets/icons/instagram-icon.svg"
+              alt="instagram icon"
+              height="25"
+              width="25"
+              decoding="async"
+              loading="eager"
+            />
+          </a>
+          <a href="https://www.youtube.com/@chartanalysis123">
+            <img
+              src="assets/icons/youtube-icon.svg"
+              alt="youtube icon"
+              height="25"
+              width="25"
+              decoding="async"
+              loading="eager"
+            />
+          </a>
+          <a href="https://www.linkedin.com/company/chart-analysis/">
+            <img
+              src="assets/icons/linkedin-icon.svg"
+              alt="linkedin icon"
+              height="25"
+              width="25"
+              decoding="async"
+              loading="eager"
+            />
+          </a>
+        </div>
+        <div class="rights-text">
+          <h2>&copy; 2024 Chartanalysis.co.in All rights reserved</h2>
+          <p>
+            The content and images used on this site are copyright protected and
+            copyrights vests with the respective owners. The usage of the
+            content and images on this website is intended to promote the works
+            and no endorsement of the artist shall be implied. Unauthorized use
+            is prohibited and punishable by law.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="sub-footer">
+        <p>
+          Designed and Developed by
+          <a href="https://webdenso.com/" target="_blank">Webdendo</a>
+        </p>
+      </div>
+    </footer>
+
+    <div class="contact-modal-wrapper">
+      <div class="modal" onclick="viewContactModal()"></div>
+      <div class="contact-dialogue">
+        <button
+          class="close-btn"
+          style="
+            display: flex;
+            position: absolute;
+            top: 2%;
+            right: 2%;
+            border: none;
+          "
+          onclick="viewContactModal()"
+        >
+          <img
+            src="assets/icons/close-icon.svg"
+            alt="close icon"
+            height="35"
+            width="35"
+          />
+        </button>
+        <div class="contact-dialogue-heading">
+          <h2>Get in touch</h2>
+          <p>Talk to our expert team.</p>
+        </div>
+        <form action="" method="post" class="modal-form">
+          <div class="input-fields">
+            <label for="user_name">Name</label>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              required
+              name="name"
+              id="user_name"
+            />
+          </div>
+          <div class="input-fields">
+            <label for="user_email">Email</label>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              required
+              name="email"
+              id="user_email"
+            />
+          </div>
+          <div class="input-fields">
+            <label for="user_number">Number</label>
+            <input
+              type="tel"
+              placeholder="Enter your number"
+              required
+              name="number"
+              id="user_number"
+            />
+          </div>
+          <button>Submit</button>
+        </form>
+        <div class="enquiry-box">
+          <a href="https://wa.me/9711501546" class="whatsapp-btn">
+            <img
+              src="assets/icons/whatsapp-icon.svg"
+              alt="whatsapp icon"
+              height="30"
+              width="30"
+              decoding="async"
+              loading="eager"
+            />
+            Whatsapp
+          </a>
+          <a href="tel:9711501546" class="actioncall-btn">
+            <img
+              src="assets/icons/phone-icon.svg"
+              alt="phone icon"
+              height="30"
+              width="30"
+              decoding="async"
+              loading="eager"
+            />
+            Call now
+          </a>
+        </div>
+      </div>
+    </div>
 
     <script defer src="assets/js/script.js"></script>
   </body>
