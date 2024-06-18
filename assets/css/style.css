@@ -556,7 +556,7 @@ span.swiper-pagination-bullet{
 
 .testimonials-container{
   position: relative;
-  margin-bottom: 50rem;
+  margin-bottom: 3rem;
 }
 
 .testimonials-container > h2{
@@ -631,6 +631,47 @@ span.swiper-pagination-bullet{
   border-radius: 50%;
 
 }
+
+
+/* Latest Videos */
+
+.latest-videos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2rem 0rem 50rem;
+  padding: 0rem  2rem;
+}
+
+.youtube-template{
+  padding: 1rem;
+}
+
+.youtube-template > iframe{
+  height: 20rem;
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.youtube-desc{
+  margin-top: 1rem;
+  font-family: var(--medium);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 500;
+  overflow: hidden;
+  display: block;
+  max-height: 4rem;
+  -webkit-line-clamp: 2;
+  display: box;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+
+
 
 /* Footer */
 footer {
@@ -1124,6 +1165,9 @@ footer {
   .form {
     width: 60%;
   }
+  .youtube-template > iframe{
+    height: 15rem;
+  }
 }
 @media only screen and (max-width: 768px) {
   .navbar-container,
@@ -1192,6 +1236,14 @@ footer {
   .swiper-slide , .swiper-slide > img{
    height: 30vh;
   } 
+
+
+  .latest-videos{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .latest-videos > iframe{
+    height: auto;
+  }
 }
 @media only screen and (max-width: 576px) {
   .navbar-container,
