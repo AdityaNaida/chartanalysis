@@ -457,7 +457,7 @@ img {
 /* seo content */
 .seo-content,
 .footer-container, .testimonials-container,
-.sub-footer, .slider {
+.sub-footer, .slider , .advisory-container{
   height: auto;
   max-width: 114rem;
   margin: 0 auto;
@@ -563,6 +563,16 @@ span.swiper-pagination-bullet{
   text-align: center;
 }
 
+.advisory-container{
+  padding: 0rem 2rem;
+}
+.advisory-container > iframe{
+  display: block;
+  border-radius: 1rem;
+   margin: 3rem auto 5rem;
+   max-width: 50rem;
+}
+
 
 .testimonials-slider{
   display: flex;
@@ -639,7 +649,7 @@ span.swiper-pagination-bullet{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin: 2rem 0rem 50rem;
+  margin: 2rem 0rem 20rem;
   padding: 0rem  2rem;
 }
 
@@ -861,145 +871,9 @@ footer {
   inset: 0;
   overflow: hidden;
 }
-.absolute {
-  position: absolute;
-  top: 0rem;
-  left: 0rem;
 
-  height: 100%;
-  width: 100%;
-  inset: 0;
-  justify-content: center;
-  display: inline-flex;
-  flex-direction: row;
-}
 
-.justify-center {
-  justify-content: center;
-}
 
-.bg-primary {
-  background-color: var(--orange);
-}
-
-.bg-pink {
-  background-color: var(--pink);
-}
-.opacity-50 {
-  opacity: 0.5;
-}
-.bg-blur {
-  filter: blur(9rem);
-}
-
-.shape1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40rem;
-  height: 40rem;
-  border-radius: 9999px;
-}
-.shape2 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-
-  width: 40rem;
-  height: 40rem;
-  border-radius: 9999px;
-}
-
-.contact {
-  position: relative;
-  height: auto;
-  width: 100%;
-
-  padding: 4rem 0rem 3rem;
-  text-align: center;
-  background-color: transparent;
-  z-index: 2;
-}
-
-.contact > p {
-  color: var(--black);
-  display: inline-block;
-  font: 600 2rem var(--light);
-
-  margin-bottom: 3rem;
-  padding: 1rem 1.5rem;
-
-  box-shadow: 0 0.2rem 0.8rem rgba(28, 28, 28, 0.08);
-  border: 0.1rem solid #e8e8e8;
-  background-color: var(--white);
-  border-radius: 10rem;
-}
-
-.contact > h2 {
-  font: 900 3rem var(--light);
-  margin-bottom: 2rem;
-}
-
-.contact > span {
-  color: var(--dark-grey);
-  font: 500 1.8rem var(--light);
-}
-.contact > span > b {
-  background: -webkit-linear-gradient(var(--orange), var(--pink));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 50%;
-
-  margin: 0 auto;
-  padding: 3rem 0rem;
-}
-
-.form > label {
-  color: var(--black);
-
-  font: 600 1.8rem var(--light);
-  opacity: 0.8;
-  margin-bottom: 1.5rem;
-}
-
-.form > input {
-  width: 100%;
-  margin-bottom: 2rem;
-
-  padding: 1.5rem;
-  border: 0.2rem solid rgba(0, 0, 0, 0.5);
-  border-radius: 1rem;
-  outline: none;
-  font: 500 1.8rem var(--light);
-}
-
-.form > input[type="number"]::-webkit-inner-spin-button,
-.form > input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-  -moz-appearance: textfield;
-}
-
-.form > button {
-  width: 50%;
-
-  padding: 1.5rem;
-  margin: 3rem auto;
-  font: 500 2rem var(--regular);
-
-  cursor: pointer;
-  color: var(--white);
-  background: linear-gradient(93deg, var(--orange), var(--pink));
-
-  border: none;
-  border-radius: 1rem;
-}
 
 /* Contact modal */
 .contact-modal-wrapper {
@@ -1154,7 +1028,7 @@ footer {
   .seo-content,
   .footer-container,
   .sub-footer, .testimonials-container,
-  .slider {
+  .slider , .advisory-container{
     max-width: 96rem;
   }
 
@@ -1176,7 +1050,7 @@ footer {
   .seo-content,
   .footer-container,
   .sub-footer, .testimonials-container,
-  .slider {
+  .slider , .advisory-container{
     max-width: 72rem;
   }
 
@@ -1251,7 +1125,7 @@ footer {
   .hero-container,
   .seo-content,
   .footer-container,
-  .sub-footer , .testimonials-container, .slider{
+  .sub-footer , .testimonials-container, .slider, .advisory-container{
     max-width: 54rem;
   }
   @keyframes slightSlide {
@@ -1388,4 +1262,15 @@ footer {
   .swiper-slide , .swiper-slide > img{
     height: 25vh;
    } 
+
+   .youtube-template > iframe{
+    height: auto;
+   }
+
+   .advisory-container > iframe{
+    border-radius: 1rem;
+     margin: 7rem auto 5rem;
+     height:25rem;
+     width: 100%;
+  }
 }
