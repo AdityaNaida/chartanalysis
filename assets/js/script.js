@@ -3,6 +3,7 @@ const querrySection = document.querySelector(".contact-wrapper");
 const plansBtn = document.querySelector(".plans-btn");
 const querryBtn = document.querySelector(".querries-btn");
 const nestedNavbar = document.querySelector(".nested-nav");
+const testimoniSlider = document.querySelector('.testimonials-slider');
 
 function activeQuerry() {
   querryBtn.classList.add("bg-orange");
@@ -67,4 +68,13 @@ startCoundown();
 
 function viewContactModal() {
   document.querySelector(".contact-modal-wrapper").classList.toggle("visible");
+}
+
+
+function rightClick() {
+  testimoniSlider.scrollLeft += testimoniSlider.scrollWidth
+}
+
+function leftClick() {
+  testimoniSlider.scrollLeft -= testimoniSlider.scrollWidth
 }
