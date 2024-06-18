@@ -518,7 +518,6 @@ img {
 .swiper {
   width: 100%;
   height: fit-content;
-  gap: 1rem;
 }
 
 .swiper .swiper-button-prev,
@@ -533,8 +532,8 @@ img {
 }
 .swiper-slide {
   height: 40vh;
-  background-color: #eaeafd;
   border-radius: 2rem;
+  padding: 0rem 1rem;
 }
 
 .swiper-slide > img{
