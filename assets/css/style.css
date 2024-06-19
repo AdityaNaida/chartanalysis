@@ -675,6 +675,11 @@ span.swiper-pagination-bullet{
 
 }
 
+.testimoni-imghoilder > img{
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+}
 
 /* Latest Videos */
 
@@ -1140,6 +1145,12 @@ footer {
   height: 14rem;
   width: 14rem;
   margin-bottom: 1rem;
+  padding: 2rem;
+}
+
+.acheivements-iconhldr > img{
+  height: auto;
+  width: 100%;
 }
 
 .experience-circle > div > h3{
@@ -1549,5 +1560,10 @@ footer {
 
    .about-content{
     padding: 1rem 2rem 3rem;
+   }
+
+   .acheivements-iconhldr{
+    height: 10rem;
+    width: 10rem;
    }
 }
