@@ -4,6 +4,7 @@ const plansBtn = document.querySelector(".plans-btn");
 const querryBtn = document.querySelector(".querries-btn");
 const nestedNavbar = document.querySelector(".nested-nav");
 const testimoniSlider = document.querySelector('.testimonials-slider');
+const viewDetailsBtns = document.querySelectorAll('.viewdetails-btn');
 
 function activeQuerry() {
   querryBtn.classList.add("bg-orange");
@@ -71,6 +72,8 @@ function viewContactModal() {
 }
 
 
+try { 
+
 function rightClick() {
   testimoniSlider.scrollLeft += testimoniSlider.scrollWidth
 }
@@ -96,3 +99,17 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+
+viewDetailsBtns.forEach((e) => {
+  e.addEventListener('click', () => {
+    const prevElem = e.previousElementSibling;
+    prevElem.classList.toggle('h-auto');
+    if (prevElem.classList.contains('h-auto')) { 
+      e.textContent = 'Hide Details'
+    } else {
+      e.textContent = 'View Details'
+    }
+  })
+})
+} catch (error) { };

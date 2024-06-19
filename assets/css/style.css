@@ -357,7 +357,7 @@ img {
 .reviews {
   opacity: 0.7;
   color: var(--light-black);
-  font: 500 1.4rem var(--light);
+  font: 500 1.3rem var(--regular);
 }
 
 .course-name {
@@ -385,13 +385,13 @@ img {
 }
 
 .price {
-  color: var(--light-black);
-  font: 500 2rem var(--medium);
+  color: #202020;
+  font: 600 2rem var(--regular);
 }
 
 .before-price {
   color: var(--light-black);
-  font: 500 1.7rem var(--light);
+  font: 500 1.5rem var(--light);
   text-decoration: line-through;
 }
 
@@ -453,6 +453,59 @@ img {
 }
 
 
+/* Advisory Plans */
+
+.advisory-plans{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.advisory-plans > div{
+ width: 32%;
+}
+
+.plan-txt{
+  color: #202020;
+  font: 600 1.5rem var(--regular);
+  margin: 1rem 0rem .5rem;
+}
+
+.details-list{
+  padding: 1rem 0rem;
+}
+
+.details-ul{
+  height: 6rem;
+  overflow-y: hidden;
+  list-style: none;
+}
+
+.details-ul > li{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  color: var(--grey);
+  font: 500 1.4rem var(--regular);
+  line-height: 2rem;
+  margin-bottom: 1rem ;
+}
+
+.viewdetails-btn{
+  margin: .5rem 1rem 0rem;
+  background-color: transparent;
+  color: #f37002;
+  border: .1rem solid #f37002;
+  padding: .2rem .6rem;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.h-auto{
+  height: auto !important;
+}
 
 /* seo content */
 .seo-content,
@@ -569,7 +622,8 @@ span.swiper-pagination-bullet{
   display: block;
   border-radius: 1rem;
    margin: 3rem auto 5rem;
-   max-width: 50rem;
+   height: 50rem;
+   width: 100%;
 }
 
 
@@ -949,7 +1003,6 @@ footer {
 .input-fields > input[type="number"]::-webkit-inner-spin-button,
 .input-fields > input[type="number"]::-webkit-outer-spin-button {
   display: none;
-  -moz-appearance: none;
 }
 
 .input-fields > input {
@@ -1042,6 +1095,10 @@ footer {
   .youtube-template > iframe{
     height: 15rem;
   }
+
+  .advisory-plans > div{
+    width: 45%;
+   }
 }
 @media only screen and (max-width: 768px) {
   .navbar-container,
@@ -1064,7 +1121,7 @@ footer {
   }
 
   .dynamiclinks-slider,
-  .toggle-btn {
+  .toggle-btn ,   .advisory-plans > div{
     width: 100%;
   }
 
