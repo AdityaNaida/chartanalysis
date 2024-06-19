@@ -729,7 +729,7 @@ footer {
 
 .gallery-container {
   position: relative;
-  top: -20%;
+  top: -0%;
   left: 50%;
   transform: translate(-50%, -10%);
 
@@ -1061,6 +1061,7 @@ footer {
   margin: 0rem auto 3rem;
   background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8)), url('../images/aboutus-banner.webp') center no-repeat;
   background-size: cover;
+  padding: 2rem;
 }
 
 .about-hero > h1{
@@ -1124,7 +1125,7 @@ footer {
   border-radius: 50%;
 }
 
-.experience-circle > div{
+.experience-circle > div, .acheivements-iconhldr{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1133,6 +1134,11 @@ footer {
   width: 100%;
   border-radius: 50%;
   background: linear-gradient(45deg, var(--pink),var(--orange));
+}
+
+.acheivements-iconhldr{
+  height: 14rem;
+  width: 14rem;
 }
 
 .experience-circle > div > h3{
@@ -1197,7 +1203,31 @@ footer {
 }
 
 .mb-50{
-  margin-bottom: 50rem;
+  margin-bottom: 20rem;
+}
+
+.achievements-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.achievements-container > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.achievement-count{
+  color: #212121;
+  font: 600 2rem var(--regular);
+}
+
+.achievements-container > div >p{
+  color: var(--grey);
+  font: 400 1.4rem var(--regular);
 }
 
 /* why us table */
@@ -1262,6 +1292,9 @@ footer {
    }
    .about-imghldr > img{
     width: 30%;
+   }
+   .achievements-container{
+    grid-template-columns: repeat(2, 1fr);
    }
 }
 @media only screen and (max-width: 768px) {
@@ -1495,5 +1528,25 @@ footer {
 
   .about-imghldr > img{
     width: 50%;
+   }
+
+
+   .img-holder{
+    height: auto;
+   }
+
+   .about-hero{
+    height: 40vh;
+   }
+
+   .about-hero > h1{
+    font-size: 3.5rem;
+   }
+   .about-hero > article{
+    font-style: 1.5rem;
+   }
+
+   .about-content{
+    padding: 1rem 2rem 3rem;
    }
 }

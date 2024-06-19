@@ -6,6 +6,21 @@ const nestedNavbar = document.querySelector(".nested-nav");
 const testimoniSlider = document.querySelector('.testimonials-slider');
 const viewDetailsBtns = document.querySelectorAll('.viewdetails-btn');
 
+const form = document.querySelector('.modal-form');
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const name = document.getElementById("user-name").value;
+  const email = document.getElementById("user-email").value;
+  const number = document.getElementById("user-number").value;
+  const whatsappNumber = 6289611092;
+  const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0AContact Number: ${number}`;
+  const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+  form.reset();
+
+  window.location.href = whatsappURL;
+});
+
+
 function activeQuerry() {
   querryBtn.classList.add("bg-orange");
   plansBtn.classList.remove("bg-orange");
@@ -113,3 +128,37 @@ viewDetailsBtns.forEach((e) => {
   })
 })
 } catch (error) { };
+
+const numberCounting = document.querySelectorAll(".achievement-count");
+  const intervalTime = 4000;
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1,
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const val = entry.target;
+        let startValue = 0;
+        let endValue = parseInt(val.getAttribute("data-val"));
+        let duration = Math.floor(intervalTime / endValue);
+
+        let counter = setInterval(() => {
+          startValue += 40;
+          val.textContent = startValue;
+          if (startValue >= endValue) {
+            clearInterval(counter);
+            val.textContent = endValue; // Ensure it ends exactly at endValue
+          }
+        }, duration);
+
+        observer.unobserve(val);
+      }
+    });
+  }, observerOptions);
+
+  numberCounting.forEach((val) => {
+    observer.observe(val);
+  });
