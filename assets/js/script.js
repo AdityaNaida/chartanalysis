@@ -9,9 +9,9 @@ const viewDetailsBtns = document.querySelectorAll('.viewdetails-btn');
 const form = document.querySelector('.modal-form');
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-  const name = document.getElementById("user-name").value;
-  const email = document.getElementById("user-email").value;
-  const number = document.getElementById("user-number").value;
+  const name = document.getElementById("user_name").value;
+  const email = document.getElementById("user_email").value;
+  const number = document.getElementById("user_number").value;
   const whatsappNumber = 6289611092;
   const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0AContact Number: ${number}`;
   const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
