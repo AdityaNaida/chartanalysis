@@ -1,12 +1,12 @@
-const heroSection = document.querySelector(".hero-container");
+const heroSection = document.querySelector(".hero-container-wrapper");
 const querrySection = document.querySelector(".contact-wrapper");
 const plansBtn = document.querySelector(".plans-btn");
 const querryBtn = document.querySelector(".querries-btn");
 const nestedNavbar = document.querySelector(".nested-nav");
-const testimoniSlider = document.querySelector('.testimonials-slider');
-const viewDetailsBtns = document.querySelectorAll('.viewdetails-btn');
+const testimoniSlider = document.querySelector(".testimonials-slider");
+const viewDetailsBtns = document.querySelectorAll(".viewdetails-btn");
 
-const form = document.querySelector('.modal-form');
+const form = document.querySelector(".modal-form");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   const name = document.getElementById("user_name").value;
@@ -19,7 +19,6 @@ form.addEventListener("submit", function (e) {
 
   window.location.href = whatsappURL;
 });
-
 
 function activeQuerry() {
   querryBtn.classList.add("bg-orange");
@@ -86,79 +85,76 @@ function viewContactModal() {
   document.querySelector(".contact-modal-wrapper").classList.toggle("visible");
 }
 
+try {
+  function rightClick() {
+    testimoniSlider.scrollLeft += testimoniSlider.scrollWidth;
+  }
 
-try { 
+  function leftClick() {
+    testimoniSlider.scrollLeft -= testimoniSlider.scrollWidth;
+  }
 
-function rightClick() {
-  testimoniSlider.scrollLeft += testimoniSlider.scrollWidth
-}
+  const swiper = new Swiper(".swiper", {
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    loop: true,
 
-function leftClick() {
-  testimoniSlider.scrollLeft -= testimoniSlider.scrollWidth
-}
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
 
-const swiper = new Swiper(".swiper", {
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
-
-viewDetailsBtns.forEach((e) => {
-  e.addEventListener('click', () => {
-    const prevElem = e.previousElementSibling;
-    prevElem.classList.toggle('h-auto');
-    if (prevElem.classList.contains('h-auto')) { 
-      e.textContent = 'Hide Details'
-    } else {
-      e.textContent = 'View Details'
-    }
-  })
-})
-} catch (error) { };
-
-const numberCounting = document.querySelectorAll(".achievement-count");
-  const intervalTime = 4000;
-  const observerOptions = {
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.1,
-  };
-
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const val = entry.target;
-        let startValue = 0;
-        let endValue = parseInt(val.getAttribute("data-val"));
-        let duration = Math.floor(intervalTime / endValue);
-
-        let counter = setInterval(() => {
-          startValue += 40;
-          val.textContent = startValue;
-          if (startValue >= endValue) {
-            clearInterval(counter);
-            val.textContent = endValue; // Ensure it ends exactly at endValue
-          }
-        }, duration);
-
-        observer.unobserve(val);
+  viewDetailsBtns.forEach((e) => {
+    e.addEventListener("click", () => {
+      const prevElem = e.previousElementSibling;
+      prevElem.classList.toggle("h-auto");
+      if (prevElem.classList.contains("h-auto")) {
+        e.textContent = "Hide Details";
+      } else {
+        e.textContent = "View Details";
       }
     });
-  }, observerOptions);
-
-  numberCounting.forEach((val) => {
-    observer.observe(val);
   });
+} catch (error) {}
+
+const numberCounting = document.querySelectorAll(".achievement-count > span");
+const intervalTime = 4000;
+const observerOptions = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.1,
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const val = entry.target;
+      let startValue = 0;
+      let endValue = parseInt(val.getAttribute("data-val"));
+      let duration = Math.floor(intervalTime / endValue);
+
+      let counter = setInterval(() => {
+        startValue += 3;
+        val.textContent = startValue;
+        if (startValue >= endValue) {
+          clearInterval(counter);
+          val.textContent = endValue; // Ensure it ends exactly at endValue
+        }
+      }, duration);
+
+      observer.unobserve(val);
+    }
+  });
+}, observerOptions);
+
+numberCounting.forEach((val) => {
+  observer.observe(val);
+});
