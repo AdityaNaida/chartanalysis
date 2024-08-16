@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chartanalysis</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="discount-container">
+        <div class="discount-effect"></div>
+        <p class="discount-text">
+          <b>Early Summer Sale</b> Save upto <b>70% off</b> on your booking
+        </p>
+        <p class="count-down"></p>
+      </div>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <a href="index.html" class="logo">
+            <img
+              src="assets/images/logo.webp"
+              alt="logo image"
+              height="50"
+              width="150"
+              decoding="async"
+              loading="eager"
+            />
+          </a>
+          <button class="menu-btn" onclick="fadeInMenu()">
+            <img
+              src="assets/icons/menu.svg"
+              alt="menu icon"
+              height="30"
+              width="30"
+              decoding="async"
+              loading="eager"
+            />
+          </button>
+          <div class="nested-nav">
+            <button class="close-btn" onclick="fadeOutMenu()">
+              <img
+                src="assets/icons/close-icon.svg"
+                alt="close icon"
+                height="35"
+                width="35"
+              />
+            </button>
+            <div class="social-medias">
+              <h2 class="follow-txt">Follow Us</h2>
+              <a href="https://www.facebook.com/chartanalysisofficial/">
+                <img
+                  src="assets/icons/facebook-icon.svg"
+                  alt="facebook icon"
+                  height="20"
+                  width="20"
+                  decoding="async"
+                  loading="eager"
+                />
+                <span>Facebook</span>
+              </a>
+              <a href="https://www.instagram.com/chartanalysisofficial/">
+                <img
+                  src="assets/icons/instagram-icon.svg"
+                  alt="instagram-icon"
+                  height="20"
+                  width="20"
+                  decoding="async"
+                  loading="eager"
+                />
+                <span>Instagram</span>
+              </a>
+              <a href="https://www.youtube.com/@chartanalysis123">
+                <img
+                  src="assets/icons/youtube-icon.svg"
+                  alt="instagram-icon"
+                  height="20"
+                  width="20"
+                  decoding="async"
+                  loading="eager"
+                />
+                <span>Youtube</span>
+              </a>
+              <a href="https://www.linkedin.com/company/chart-analysis/">
+                <img
+                  src="assets/icons/linkedin-icon.svg"
+                  alt="instagram-icon"
+                  height="20"
+                  width="20"
+                  decoding="async"
+                  loading="eager"
+                />
+                <span>Linkedin</span>
+              </a>
+              <a href="https://x.com/ChartAnalysis01">
+                <img
+                  src="assets/icons/twitter-icon.svg"
+                  alt="twitter-icon"
+                  height="20"
+                  width="20"
+                  decoding="async"
+                  loading="eager"
+                />
+                <span>Twitter</span>
+              </a>
+              <a href="https://t.me/umeshsharmachartanalysis">
+                <img
+                  src="assets/icons/telegram-icon.svg"
+                  alt="telegram-icon"
+                  height="20"
+                  width="20"
+                  decoding="async"
+                  loading="eager"
+                />
+                <span>Telegram</span>
+              </a>
+            </div>
+
+            <button class="contact-btn" onclick="viewContactModal()">
+              Get in touch
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="navbar sticky-nav">
+        <div class="dynamiclinks-container">
+          <div class="dynamiclinks-slider">
+            <a href="index.html" class="dynamiclink">
+              <img
+                src="assets/icons/home-icon.svg"
+                alt="research icon"
+                height="30 "
+                width="30 "
+                decoding="async"
+                loading="eager"
+              />
+              <span>Home</span>
+            </a>
+            <a href="about-us.html" class="dynamiclink">
+              <img
+                src="assets/icons/about-icon.svg"
+                alt="policy icon"
+                height="30"
+                width="30"
+                decoding="async"
+                loading="eager"
+              />
+              <span>About Us</span>
+            </a>
+            <a href="#" class="dynamiclink">
+              <img
+                src="assets/icons/app-icon.svg"
+                alt="plans icon"
+                height="30"
+                width="30"
+                decoding="async"
+                loading="eager"
+              />
+              <span>Mobile App</span>
+            </a>
+            <a href="#" class="dynamiclink">
+              <img
+                src="assets/icons/blog-icon.svg "
+                alt="about icon"
+                height="30"
+                width="30"
+                decoding="async"
+                loading="eager"
+              />
+              <span>Blog</span>
+            </a>
+            <div class="policies-container">
+              <p href="assets/files/Policies.pdf" class="dynamiclink">
+                <img
+                  src="assets/icons/policy-icon.svg"
+                  alt="about icon"
+                  height="30"
+                  width="30"
+                  decoding="async"
+                  loading="eager"
+                />
+                <span>Policies</span>
+              </p>
+
+              <div class="policies-options">
+                <a href="derivatives-risk-disclosure.html"
+                  >Derivatives Risk Disclosure</a
+                >
+                <a href="investor-charter-disclosure.html"
+                  >Investor Charter & Disclosure</a
+                >
+                <a href="research-disclaimer.html"
+                  >Research Disclaimer & Disclosure</a
+                >
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cancellation & Refund Policy</a>
+                <a href="#">Other Disclosures</a>
+                <a href="#">Terms & Conditions</a>
+              </div>
+            </div>
+            <a
+              href="javascript:void(0);"
+              class="dynamiclink"
+              onclick="viewContactModal()"
+            >
+              <img
+                src="assets/icons/contact-icon.svg"
+                alt="about icon"
+                height="30"
+                width="30"
+                decoding="async"
+                loading="eager"
+              />
+              <span>Contact Us</span>
+            </a>
+          </div>
+          <div class="toggle-btn">
+            <div class="plans-btn bg-orange" onclick="activePlans()">
+              Courses
+            </div>
+            <div class="querries-btn" onclick="activeQuerry()">Advisory</div>
+          </div>
+        </div>
+      </div>
+
+      <section class="policiesContainer">
+        <h1>
+          Research Disclaimer and Disclosure under SEBI (Research Analysts)
+          Regulations 2014
+        </h1>
+
+        <p>
+          <u
+            >Research Services are under the banner of UMESH SHARMA SEBI
+            Registration-INH000015622</u
+          >
+        </p>
+
+        <article>
+          The report / information / opinions/buy/sell recommendations have been
+          prepared by me and are subject to change without any notice. The
+          report and information contained herein is strictly confidential and
+          meant solely for the selected recipient and may not be altered in any
+          way, transmitted to, copied or distributed, in part or in whole, to
+          any other person or to the media or reproduced in any form, without
+          prior written consent of me. The information provided in the Report is
+          from publicly available data, which I believe and reliable. While
+          reasonable endeavors have been made to present reliable data in the
+          Report so far as it relates to current and historical information, I
+          am not guaranteeing the accuracy or completeness of the data in the
+          Report. Accordingly, I or my relatives shall not be in any way
+          responsible for any loss or damage that may arise to any person from
+          any inadvertent error in the information contained, views and opinions
+          expressed in this publication.
+        </article>
+
+        <article>
+          Past performance should not be taken as an indication or guarantee of
+          future performance, and no representation or warranty, express or
+          implied, is made regarding future performance. The price, value of and
+          income from any of the securities or financial instruments mentioned
+          in this report can fall as well as rise.
+        </article>
+
+        <article>
+          The Report also includes my analysis and views. The Report is purely
+          for information purposes and does not construe to be investment
+          recommendation/advice or an offer or solicitation of an offer to
+          buy/sell any securities. The opinions expressed in the Report are our
+          current opinions as of the date of the Report and may be subject to
+          change from time to time without notice. I / Or any persons connected
+          with me do not accept any liability arising from the use of this
+          document.
+        </article>
+
+        <article>
+          Investors should not solely rely on the information contained in this
+          Report and must make investment decisions based on their own
+          investment objectives, judgment, risk profile and financial position.
+          The recipients of this Report may take professional advice before
+          acting on this information.
+        </article>
+
+        <article>
+          This document is for private circulation & Educational Purpose only.
+          Neither the information nor any opinion expressed constitutes an
+          offer, or any invitation to make an offer, to buy or sell any
+          securities or any options, future or other derivatives related to such
+          securities. The investment advice or guidance provided by way of
+          recommendations, reports or other ways are solely the personal views
+          of the research analyst.
+        </article>
+
+        <article>
+          Users are advised to use the data for the purpose of information and
+          rely on their own judgment while making investment decisions. The
+          research recommendations and information are solely for the personal
+          information of the authorized recipient and does not construe to be an
+          offer document or any sort of investment, legal or taxation advice or
+          solicitation of any action based upon it. This report is not for
+          public distribution or use by any person or entity, where such
+          distribution, publication, availability or use would be contrary to
+          law, regulation or subject to any registration or licensing
+          requirement. We will not treat recipients as customer by virtue of
+          their receiving this report. The report is based upon the information
+          obtained from public sources that we consider reliable, but we do not
+          guarantee its accuracy or completeness.
+        </article>
+
+        <article>
+          Umesh Sharma shall not be in any way responsible for any loss or
+          damage that may arise to any such person from any inadvertent error in
+          the information contained in this report. The recipients of this
+          report should rely on their own investigations.
+        </article>
+
+        <article>
+          I submit that no material disciplinary action has been taken on me by
+          any Regulatory Authority impacting Equity Research Analysis
+          activities.
+        </article>
+
+        <p>
+          <u
+            >Disclosure Answers to the Best of my knowledge and belief that I,
+            Umesh Sharma/ my Associates/ my Family:</u
+          >
+        </p>
+
+        <ul>
+          <li>
+            Do not have any financial interest /any actual/beneficial ownership
+            in the subject company.
+          </li>
+          <li>
+            Don&apos;t have any other material conflict of interest at the time
+            of publication of the research report.
+          </li>
+          <li>
+            Have not received any compensation from the subject company not
+            managed or co-managed public offering of securities for the subject
+            company.
+          </li>
+
+          <li>
+            Have not received any compensation for brokerage services or any
+            products / services or any compensation or other benefits from the
+            subject company, nor engaged in market making activity for the
+            subject company ·
+          </li>
+
+          <li>
+            Have not served as an officer, director or employee of the subject
+            company.
+          </li>
+        </ul>
+
+        <p>
+          "INVESTMENTS IN SECURITIES MARKET ARE SUBJECT TO MARKET RISKS. READ
+          ALL THE RELATED DOCUMENTS CAREFULLY BEFORE INVESTING."
+        </p>
+
+        <p>
+          “Registration granted by SEBI & Certification from NISM in no way
+          guarantee performance of the intermediary or provide any assurance of
+          returns to Investors.” “Past Performance does not provide the
+          Guarantee of Future Returns”
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="gallery-container">
+          <div class="footerlink-fields">
+            <p>about chartanalysis</p>
+            <a href="index.html">
+              <div class="footer-link">Home</div>
+            </a>
+            <a href="about-us.html">
+              <div class="footer-link">About us</div>
+            </a>
+            <a href="#">
+              <div class="footer-link">Mobile app</div>
+            </a>
+            <a href="#">
+              <div class="footer-link">blog</div>
+            </a>
+            <a href="assets/files/Policies.pdf" download="policy.pdf">
+              <div class="footer-link">ploicies</div>
+            </a>
+          </div>
+          <div class="footerlink-fields">
+            <p>socials</p>
+            <a href="https://www.facebook.com/chartanalysisofficial/">
+              <div class="footer-link">Facebook</div>
+            </a>
+            <a href="https://www.instagram.com/chartanalysisofficial/">
+              <div class="footer-link">Instagram</div>
+            </a>
+            <a href="https://www.linkedin.com/company/chart-analysis/">
+              <div class="footer-link">Linkedin</div>
+            </a>
+            <a href="https://www.youtube.com/@chartanalysis123">
+              <div class="footer-link">Youtube</div>
+            </a>
+            <a href="https://x.com/ChartAnalysis01">
+              <div class="footer-link">Twitter</div>
+            </a>
+            <a href="https://t.me/umeshsharmachartanalysis">
+              <div class="footer-link">Telegram</div>
+            </a>
+          </div>
+          <div class="footerlink-fields">
+            <p>contact</p>
+            <a href="javascript:void(0);" onclick="viewContactModal()">
+              <div class="footer-link">Contact us</div>
+            </a>
+            <h4>Address</h4>
+            <ul>
+              <li>
+                <img
+                  src="assets/icons/location-icon.svg"
+                  alt="location icon"
+                  height="20"
+                  width="20"
+                  decoding="async"
+                  loading="lazy"
+                />
+                <p>Office No.-301, H-74, Sec-63, Noida 201301</p>
+              </li>
+              <li>
+                <a href="tel:6289611092">
+                  <img
+                    src="assets/icons/call-icon.svg"
+                    alt="call icon"
+                    height="20"
+                    width="20"
+                    decoding="async"
+                    loading="lazy"
+                  />
+                  <p>+91 62896 11092</p>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:chartanalysisofficial@gmail.com">
+                  <img
+                    src="assets/icons/email-icon.svg"
+                    alt="email icon"
+                    height="20"
+                    width="20"
+                    decoding="async"
+                    loading="lazy"
+                  />
+                  <p>chartanalysisofficial@gmail.com</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footerlink-fields">
+            <p>gallery</p>
+            <div class="gallery-grid">
+              <img
+                src="assets/images/gallery-1.png"
+                alt="gllery image 1"
+                decoding="async"
+                loading="lazy"
+                height="40"
+                width="40"
+              />
+              <img
+                src="assets/images/gallery-2.png"
+                alt="gllery image 2"
+                decoding="async"
+                loading="lazy"
+                height="40"
+                width="40"
+              />
+              <img
+                src="assets/images/gallery-3.png"
+                alt="gllery image 3"
+                decoding="async"
+                loading="lazy"
+                height="40"
+                width="40"
+              />
+              <img
+                src="assets/images/gallery-4.png"
+                alt="gllery image 4"
+                decoding="async"
+                loading="lazy"
+                height="40"
+                width="40"
+              />
+              <img
+                src="assets/images/gallery-5.png"
+                alt="gllery image 5"
+                decoding="async"
+                loading="lazy"
+                height="40"
+                width="40"
+              />
+              <img
+                src="assets/images/gallery-6.png"
+                alt="gllery image 6"
+                decoding="async"
+                loading="lazy"
+                height="40"
+                width="40"
+              />
+              <img
+                src="assets/images/gallery-7.png"
+                alt="gllery image 7"
+                decoding="async"
+                loading="lazy"
+                height="40"
+                width="40"
+              />
+              <img
+                src="assets/images/gallery-8.png"
+                alt="gllery image 8"
+                decoding="async"
+                loading="lazy"
+                height="40"
+                width="40"
+              />
+              <img
+                src="assets/images/gallery-9.png"
+                alt="gllery image 9"
+                decoding="async"
+                loading="lazy"
+                height="40"
+                width="40"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="footer-logo">
+          <div class="logo">
+            <a href="index.html">
+              <h2>Chartanalysis.co.in</h2>
+            </a>
+          </div>
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/chartanalysisofficial/">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+            >
+              <path
+                d="M16.033-0c-8.864 0-16.033 7.169-16.033 16.033s7.169 16.033 16.033 16.033c8.864 0 16.033-7.169 16.033-16.033-0.065-8.864-7.234-16.033-16.033-16.033zM20.334 9.841h-2.281c-1.173 0-1.434 0.782-1.434 1.564v1.564h3.519l-0.456 3.063h-3.063v9.255h-3.063v-9.255h-1.825v-3.063h1.89v-1.89c0-2.477 0.717-4.301 3.454-4.301h3.259v3.063z"
+              ></path>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/chartanalysisofficial/">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+            >
+              <path
+                d="M18.208 13.847c1.196 1.196 1.196 3.136 0 4.332s-3.136 1.196-4.332 0c-1.196-1.196-1.196-3.136 0-4.332s3.136-1.196 4.332 0zM23.202 10.558c-0.326-0.782-0.912-1.434-1.76-1.76-0.521-0.196-1.108-0.326-1.695-0.326-0.978 0-1.303 0-3.715 0s-2.737 0-3.715 0.065c-0.587 0-1.173 0.13-1.694 0.326-0.847 0.261-1.499 0.912-1.76 1.694-0.196 0.521-0.326 1.108-0.326 1.694-0.065 1.043-0.065 1.303-0.065 3.78s0 2.737 0.065 3.715c0 0.587 0.13 1.173 0.326 1.695 0.326 0.782 0.912 1.434 1.76 1.76 0.521 0.196 1.108 0.326 1.694 0.326 0.978 0.065 1.238 0.065 3.715 0.065s2.737 0 3.715-0.065c0.587 0 1.173-0.13 1.695-0.326 0.782-0.326 1.434-0.912 1.76-1.76 0.196-0.521 0.326-1.108 0.326-1.695 0.065-0.978 0.065-1.238 0.065-3.715s0-2.737-0.065-3.715c-0.065-0.587-0.13-1.173-0.326-1.76zM16.033 20.725v0c-2.607 0-4.692-2.086-4.692-4.692s2.086-4.692 4.692-4.692c2.607 0 4.692 2.086 4.692 4.692s-2.086 4.692-4.692 4.692zM20.921 12.187v0c-0.587 0-1.108-0.521-1.108-1.108s0.521-1.108 1.108-1.108 1.108 0.521 1.108 1.108c0 0.652-0.521 1.108-1.108 1.108zM16.033-0c-8.864 0-16.033 7.169-16.033 16.033s7.169 16.033 16.033 16.033c8.864 0 16.033-7.169 16.033-16.033-0.065-8.864-7.234-16.033-16.033-16.033zM25.157 19.813c0 0.782-0.13 1.499-0.456 2.216-0.456 1.238-1.434 2.216-2.672 2.672-0.717 0.261-1.499 0.391-2.216 0.456-0.978 0.065-1.303 0.065-3.78 0.065s-2.802 0-3.78-0.065c-0.782 0-1.499-0.13-2.216-0.456-1.238-0.456-2.216-1.434-2.672-2.672-0.261-0.717-0.391-1.499-0.456-2.216-0.065-0.978-0.065-1.303-0.065-3.78s0-2.802 0.065-3.78c0-0.782 0.13-1.499 0.456-2.216 0.456-1.238 1.434-2.216 2.672-2.672 0.717-0.261 1.499-0.391 2.216-0.456 0.978-0.065 1.303-0.065 3.78-0.065s2.802 0 3.78 0.065c0.782 0 1.499 0.13 2.216 0.456 1.238 0.456 2.216 1.434 2.672 2.672 0.261 0.717 0.391 1.499 0.456 2.216 0.065 0.978 0.065 1.303 0.065 3.78s0 2.802-0.065 3.78z"
+              ></path>
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/@chartanalysis123">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+            >
+              <path
+                d="M14.012 19.031l5.214-2.998-5.214-2.998zM16.033-0c-8.864 0-16.033 7.169-16.033 16.033s7.169 16.033 16.033 16.033c8.864 0 16.033-7.169 16.033-16.033-0.065-8.864-7.234-16.033-16.033-16.033zM25.613 20.855c-0.261 0.847-0.912 1.499-1.76 1.76-1.564 0.391-7.821 0.391-7.821 0.391s-6.257 0-7.821-0.456c-0.847-0.261-1.499-0.912-1.76-1.76-0.261-1.564-0.391-3.193-0.391-4.823s0.13-3.193 0.391-4.823c0.261-0.847 0.912-1.564 1.76-1.76 1.564-0.391 7.821-0.391 7.821-0.391s6.257 0 7.821 0.456c0.847 0.261 1.499 0.912 1.76 1.76 0.261 1.564 0.456 3.193 0.391 4.823 0 1.629-0.13 3.193-0.391 4.823z"
+              ></path>
+            </svg>
+          </a>
+          <a href="https://x.com/ChartAnalysis01">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+            >
+              <path
+                d="M16.033-0c-8.864 0-16.033 7.169-16.033 16.033s7.169 16.033 16.033 16.033c8.864 0 16.033-7.169 16.033-16.033-0.065-8.864-7.234-16.033-16.033-16.033zM22.876 12.318c0 0.13 0 0.326 0 0.456 0 4.888-3.585 10.558-10.037 10.558-1.955 0-3.845-0.587-5.409-1.695 0.261 0.065 0.587 0.065 0.847 0.065 1.629 0 3.193-0.587 4.367-1.629-1.564-0.065-2.868-1.108-3.324-2.607 0.521 0.13 1.108 0.065 1.629-0.065-1.694-0.456-2.868-1.955-2.868-3.715v0c0.456 0.326 1.043 0.456 1.629 0.521-1.564-1.173-2.020-3.324-1.108-5.083 1.694 2.346 4.367 3.845 7.299 4.041-0.065-0.261-0.065-0.587-0.065-0.847-0.065-1.955 1.499-3.65 3.454-3.715 0 0 0.065 0 0.065 0 0.978 0 1.955 0.456 2.607 1.238 0.782-0.13 1.564-0.456 2.216-0.847-0.261 0.847-0.782 1.564-1.564 2.020 0.717-0.065 1.369-0.261 2.020-0.587-0.456 0.782-1.043 1.369-1.76 1.89z"
+              ></path>
+            </svg>
+          </a>
+          <a href="https://t.me/umeshsharmachartanalysis">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+            >
+              <path
+                d="M16.033 0c-8.864 0-16.033 7.169-16.033 16.033s7.169 16.033 16.033 16.033 16.033-7.169 16.033-16.033c-0.065-8.864-7.234-16.033-16.033-16.033zM22.243 11.206l-2.797 13.174c-0.212 0.951-0.766 1.185-1.549 0.739l-4.291-3.164-2.075 1.99c-0.229 0.229-0.419 0.419-0.855 0.419l0.31-4.357 7.921-7.125c0.345-0.345-0.08-0.541-0.537-0.196l-9.804 6.165-4.229-1.32c-0.921-0.287-0.941-0.921 0.196-1.366l16.611-6.386c0.734-0.287 1.367 0.196 1.123 1.322z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <div class="rights-text">
+          <h2>&copy; 2024 Chartanalysis.co.in All rights reserved</h2>
+          <p>
+            The content and images used on this site are copyright protected and
+            copyrights vests with the respective owners. The usage of the
+            content and images on this website is intended to promote the works
+            and no endorsement of the artist shall be implied. Unauthorized use
+            is prohibited and punishable by law.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="sub-footer">
+        <p>
+          Designed and Developed by
+          <a href="https://webdenso.com/" target="_blank">Webdendo</a>
+        </p>
+      </div>
+    </footer>
+
+    <div class="contact-modal-wrapper">
+      <div class="modal" onclick="viewContactModal()"></div>
+      <div class="contact-dialogue">
+        <button
+          class="close-btn"
+          style="
+            display: flex;
+            position: absolute;
+            top: 2%;
+            right: 2%;
+            border: none;
+          "
+          onclick="viewContactModal()"
+        >
+          <img
+            src="assets/icons/close-icon.svg"
+            alt="close icon"
+            height="35"
+            width="35"
+          />
+        </button>
+        <div class="contact-dialogue-heading">
+          <h2>Get in touch</h2>
+          <p>Talk to our expert team.</p>
+        </div>
+        <form action="" method="post" class="modal-form">
+          <div class="input-fields">
+            <label for="user_name">Name</label>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              required
+              name="user_name"
+              id="user_name"
+            />
+          </div>
+          <div class="input-fields">
+            <label for="user_email">Email</label>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              required
+              name="email"
+              id="user_email"
+            />
+          </div>
+          <div class="input-fields">
+            <label for="user_number">Number</label>
+            <input
+              type="tel"
+              placeholder="Enter your number"
+              required
+              name="number"
+              id="user_number"
+            />
+          </div>
+          <button>Submit</button>
+        </form>
+        <div class="enquiry-box">
+          <a href="https://wa.me/6289611092" class="whatsapp-btn">
+            <img
+              src="assets/icons/whatsapp-icon.svg"
+              alt="whatsapp icon"
+              height="30"
+              width="30"
+              decoding="async"
+              loading="eager"
+            />
+            Whatsapp
+          </a>
+          <a href="tel:6289611092" class="actioncall-btn">
+            <img
+              src="assets/icons/phone-icon.svg"
+              alt="phone icon"
+              height="30"
+              width="30"
+              decoding="async"
+              loading="eager"
+            />
+            Call now
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="assets/js/script.js"></script>
+  </body>
+</html>
