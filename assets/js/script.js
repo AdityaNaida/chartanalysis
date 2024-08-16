@@ -158,3 +158,9 @@ const observer = new IntersectionObserver((entries, observer) => {
 numberCounting.forEach((val) => {
   observer.observe(val);
 });
+
+const policyModal = document.querySelector(".policy-modal-wrapper");
+
+function viewPoliciesMobile() {
+  policyModal.classList.toggle("visible");
+}

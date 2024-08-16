@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chartanalysis</title>
+    <title>Chartanalysis | Terms & Conditions</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -183,7 +183,11 @@
               <span>Blog</span>
             </a>
             <div class="policies-container">
-              <p href="assets/files/Policies.pdf" class="dynamiclink">
+              <p
+                href="assets/files/Policies.pdf"
+                class="dynamiclink"
+                onclick="viewPoliciesMobile()"
+              >
                 <img
                   src="assets/icons/policy-icon.svg"
                   alt="about icon"
@@ -209,8 +213,8 @@
                 <a href="cancellation-refund-policy.html"
                   >Cancellation & Refund Policy</a
                 >
-                <a href="#">Other Disclosures</a>
-                <a href="#">Terms & Conditions</a>
+                <a href="other-disclosures.html">Other Disclosures</a>
+                <a href="terms-and-conditions.html">Terms & Conditions</a>
               </div>
             </div>
             <a
@@ -653,6 +657,39 @@
             />
             Call now
           </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="policy-modal-wrapper">
+      <div class="modal" onclick="viewPoliciesMobile()"></div>
+      <div class="policy-floated">
+        <img
+          src="assets/icons/close-icon.svg"
+          alt="close icon "
+          height="30"
+          width="30"
+          decoding="async"
+          loading="lazy"
+          onclick="viewPoliciesMobile()"
+        />
+        <h2>Privacy Policies</h2>
+        <div class="polcies-links">
+          <a href="derivatives-risk-disclosure.html"
+            >Derivatives Risk Disclosure</a
+          >
+          <a href="investor-charter-disclosure.html"
+            >Investor Charter & Disclosure</a
+          >
+          <a href="research-disclaimer.html"
+            >Research Disclaimer & Disclosure</a
+          >
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="cancellation-refund-policy.html"
+            >Cancellation & Refund Policy</a
+          >
+          <a href="other-disclosures.html">Other Disclosures</a>
+          <a href="terms-and-conditions.html">Terms & Conditions</a>
         </div>
       </div>
     </div>

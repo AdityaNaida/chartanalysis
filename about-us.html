@@ -135,7 +135,7 @@
     <main>
       <div class="navbar sticky-nav">
         <div class="dynamiclinks-container">
-          <div class="dynamiclinks-slider" style="border-right: none">
+          <div class="dynamiclinks-slider">
             <a href="index.html" class="dynamiclink">
               <img
                 src="assets/icons/home-icon.svg"
@@ -180,21 +180,41 @@
               />
               <span>Blog</span>
             </a>
-            <a
-              href="assets/files/Policies.pdf"
-              download="policy.pdf"
-              class="dynamiclink"
-            >
-              <img
-                src="assets/icons/policy-icon.svg"
-                alt="about icon"
-                height="30"
-                width="30"
-                decoding="async"
-                loading="eager"
-              />
-              <span>Policies</span>
-            </a>
+            <div class="policies-container">
+              <p
+                href="assets/files/Policies.pdf"
+                class="dynamiclink"
+                onclick="viewPoliciesMobile()"
+              >
+                <img
+                  src="assets/icons/policy-icon.svg"
+                  alt="about icon"
+                  height="30"
+                  width="30"
+                  decoding="async"
+                  loading="eager"
+                />
+                <span>Policies</span>
+              </p>
+
+              <div class="policies-options">
+                <a href="derivatives-risk-disclosure.html"
+                  >Derivatives Risk Disclosure</a
+                >
+                <a href="investor-charter-disclosure.html"
+                  >Investor Charter & Disclosure</a
+                >
+                <a href="research-disclaimer.html"
+                  >Research Disclaimer & Disclosure</a
+                >
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="cancellation-refund-policy.html"
+                  >Cancellation & Refund Policy</a
+                >
+                <a href="other-disclosures.html">Other Disclosures</a>
+                <a href="terms-and-conditions.html">Terms & Conditions</a>
+              </div>
+            </div>
             <a
               href="javascript:void(0);"
               class="dynamiclink"
@@ -210,6 +230,12 @@
               />
               <span>Contact Us</span>
             </a>
+          </div>
+          <div class="toggle-btn">
+            <div class="plans-btn bg-orange" onclick="activePlans()">
+              Courses
+            </div>
+            <div class="querries-btn" onclick="activeQuerry()">Advisory</div>
           </div>
         </div>
       </div>
@@ -692,6 +718,39 @@
             />
             Call now
           </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="policy-modal-wrapper">
+      <div class="modal" onclick="viewPoliciesMobile()"></div>
+      <div class="policy-floated">
+        <img
+          src="assets/icons/close-icon.svg"
+          alt="close icon "
+          height="30"
+          width="30"
+          decoding="async"
+          loading="lazy"
+          onclick="viewPoliciesMobile()"
+        />
+        <h2>Privacy Policies</h2>
+        <div class="polcies-links">
+          <a href="derivatives-risk-disclosure.html"
+            >Derivatives Risk Disclosure</a
+          >
+          <a href="investor-charter-disclosure.html"
+            >Investor Charter & Disclosure</a
+          >
+          <a href="research-disclaimer.html"
+            >Research Disclaimer & Disclosure</a
+          >
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="cancellation-refund-policy.html"
+            >Cancellation & Refund Policy</a
+          >
+          <a href="other-disclosures.html">Other Disclosures</a>
+          <a href="terms-and-conditions.html">Terms & Conditions</a>
         </div>
       </div>
     </div>

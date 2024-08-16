@@ -156,7 +156,7 @@ img {
   width: 12rem;
 }
 .logo > img {
-  height: auto;
+  height: 6em;
   width: 100%;
   mix-blend-mode: multiply;
 }
@@ -1320,6 +1320,10 @@ footer {
   cursor: pointer;
 }
 
+.policies-container > p {
+  pointer-events: none;
+}
+
 .policies-container .policies-options {
   position: fixed;
   background: #fff;
@@ -1404,6 +1408,62 @@ footer {
   text-decoration: underline;
   color: var(--blue);
   font: 500 1.5rem var(--medium);
+}
+
+/* Policy modal */
+
+.policy-modal-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  height: 100vh;
+  width: 100vw;
+}
+
+.policy-floated {
+  position: relative;
+  height: 100vh;
+  width: 90vw;
+  padding: 4rem 2rem;
+  background: white;
+  animation: fadeInLeft 0.3s ease 0s 1 forwards;
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(-90%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.policy-floated > img {
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.policy-floated > h2 {
+  font: 600 2.5rem var(--medium);
+  color: var(--mad-black);
+  margin-bottom: 1rem;
+}
+
+.polcies-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  padding: 1rem;
+}
+
+.polcies-links a {
+  font: 500 1.5rem var(--regular);
+  color: var(--light-black);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1524,6 +1584,10 @@ footer {
   .swiper-slide,
   .swiper-slide > img {
     height: 30vh;
+  }
+
+  .policies-container > p {
+    pointer-events: all;
   }
 
   .latest-videos {
@@ -1729,5 +1793,9 @@ footer {
 
   .whatsapp-querry-btn {
     padding: 0.7rem 1.5rem;
+  }
+
+  .policies-container:hover .policies-options {
+    display: none;
   }
 }
